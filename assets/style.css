@@ -38,12 +38,34 @@ html {
     flex-wrap: wrap;
     flex-grow: 1;
   }
-  
+
+  section {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+
   aside {
-    flex: 1;
+    display: flex;
     background-color: #b9c6ae;
     padding: 80px;
     text-align: left;
+  }
+
+  div{
+    display:flex;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: left;
+  }
+
+  div img{
+    display: flex;
+    width: 50%;
+    height: 50%;
+
+
   }
   
   footer {
