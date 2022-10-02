@@ -40,34 +40,47 @@ html {
     flex-grow: 1;
   }
 
-  section {
+  .name {
     display: flex;
     background-color: navy;
     margin: 1rem;
+    width: 1157px;
+    height: 256px;
   }
 
 
-  aside {
+  .aside {
     display: flex;
     background-color: navy;
     padding: 2rem 3rem 2rem 3rem;
     flex-direction: column;
     align-items: center;
+    length: 15rem;
+    width:  15rem;
   }
 
-  aside img{
+  .aside-img{
     width: 10rem;
     height: 10rem;
     margin-top: 1rem;
 
   }
 
-  div{
+  .may{
     display:flex;
     background-color: #b9c6ae;
     padding: 80px;
     text-align: left;
+    length: 256px;
+    width: 917px;
   }
+
+  .img2 {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+    }
+  
 
   
   
