@@ -13,14 +13,14 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
 }
   
 
   
   header {
     padding: 20px;
-    text-align: center;
-    background: #13293d;
+    text-align: left;
     color: #fff;
   }
 
