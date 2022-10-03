@@ -1,147 +1,234 @@
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family:'Gill Sans', 'Gill Sans MT', calibri , 'Trebuchet MS', sans-serif;
-    color:aliceblue
+ /*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family:'Gill Sans', 'Gill Sans MT', calibri , 'Trebuchet MS', sans-serif;
+  color:aliceblue
 }
 
 html {
-    scroll-behavior: smooth;
-    background: url("./ptarmigan.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: scroll;
+  scroll-behavior: smooth;
+  background: url("./ptarmigan.jpg") no-repeat center center scroll; 
+  -webkit-background-size: cover;
+-moz-  -o-background-size: cover;
+  background-size: cover;
+
 }
-  
 
-  
-  header {
-    padding: 20px;
-    text-align: left;
-    color: #fff;
+header {
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: limegreen;
+  font-size: 1rem;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;s
+}
+
+h1{ 
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  top: 39rem;
+  left: 2rem;
+  font-size: 2rem;
+  color:limegreen;
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  background-color: azure;
+  margin-top: 49%;
+
   }
 
-  nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   }
+
+
+
   
-  nav a {
-    color: limegreen;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+
+.aside {
+  display: flex;
+  background-color: navy;
+  padding: 2rem 3rem 2rem 3rem;
+  flex-direction: column;
+  align-items: center;
+  length: 15rem;
+  width:  15rem;
+}
+
+
+/*.aside {
+  display: flex;
+  background-color: navy;
+  padding: 2rem 3rem 2rem 3rem;
+  flex-direction: column;
+  align-items: center;
+  length: 15rem;
+  width:  15rem;
+}*/
+
+/*.aside-img{
+  width: 100%;
+  /*height: 10rem;
+  margin-top: 1rem;*/
+
+/*}
+
+.may{
+  display:flex;
+  background-color: #b9c6ae;
+  padding: 80px;/*
+  text-align: left;
+  length: 256px;
+  width: 917px;
+}
+
+.img2 {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 1rem;
   }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
 
 
-    
 
-  .aside {
-    display: flex;
-    background-color: navy;
-    padding: 2rem 3rem 2rem 3rem;
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+  margin-top: auto;
+}
+
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Added rotation, box-shadow, border-radius 
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+ Added border-radius to match the card 
+.card header {
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
     flex-direction: column;
-    align-items: center;
-    length: 15rem;
-    width:  15rem;
+  }
+}
+*/
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family:'Gill Sans', 'Gill Sans MT', calibri , 'Trebuchet MS', sans-serif;
+  color: seagreen;
+  background-color: rgb(225, 233, 245);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+  background-color: rgb(225, 233, 245);
+  padding: .5rem;
+
+
+}
+
+h1{  /*flex?*/
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  justify-content: flex-start;
+  padding:.0 .5rem .5rem .5rem;
+
+}
+
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: .5rem .5rem 0 .5rem;
+}
+
+nav a {
+  font-size: 1rem;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+
+.img{
+  display: flex;
+  width:100%;
+  height: auto;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
   }
 
+.about{
+  margin-top: .5rem;
+}
 
-  /*.aside {
-    display: flex;
-    background-color: navy;
-    padding: 2rem 3rem 2rem 3rem;
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
     flex-direction: column;
-    align-items: center;
-    length: 15rem;
-    width:  15rem;
-  }*/
-
-  .aside-img{
-    width: 100%;
-    /*height: 10rem;
-    margin-top: 1rem;*/
-
   }
-
-  .may{
-    display:flex;
-    background-color: #b9c6ae;
-    padding: 80px;
-    text-align: left;
-    length: 256px;
-    width: 917px;
-  }
-
-  .img2 {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 1rem;
-    }
-  
-
-  
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-    margin-top: auto;
-  }
-  
-  .products {
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  
-  /* Added rotation, box-shadow, border-radius */
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 50px;
-    padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
-  }
-  
-  /* Added border-radius to match the card */
-  .card header {
-    border-radius: 50px 50px 0px 0px;
-    padding: 20px;
-  }
-  
-  .card p {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
-  }
-  
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-  
+}
