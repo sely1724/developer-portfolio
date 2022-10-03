@@ -180,8 +180,6 @@ html {
 header{
   background-color: rgb(225, 233, 245);
   padding: .5rem;
-
-
 }
 
 h1{  /*flex?*/
@@ -230,7 +228,14 @@ main {
   margin-top: .5rem;
 }
 
-.work-flexbox{
+.work-flexbox1{
+  justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+  flex-flow: row wrap;
+  display: flex;
+}
+.work-flexbox2{
   justify-content: center;
   margin: 0 auto;
   width: 100vw;
@@ -240,57 +245,77 @@ main {
 
 .card1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-content: flex-start;
   border-style: solid;
   border-width: 1px;
-  padding: 10px;
+  padding: 1px;
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 10px;
   width: calc(50vw - 20px);
-  height: calc(50vw - 20px);
+  height: calc(50vh - 20px);
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .card2 {
   display: flex;
   justify-content: flex-start;
-  margin-top: 1rem;
   border-style: solid;
   border-width: 1px;
-  padding: 10px;
+  padding: 1px;
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 10px;
   width: calc(25vw - 20px);
-  height: calc(25vw - 20px);
+  height: calc(25vh - 20px);
   flex-direction: column;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .card2 .link{
 position: absolute;
 width: calc(25vw - 30px);
-background-color: white;
-bottom: 5px;
-right: 5px;
+bottom: 7px;
+right: 10px;
 text-align: center;
-opacity: 80%;
 
+
+}
+
+.card1 .link{
+    position: absolute;
+    width: calc(50vw - 30px);
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    opacity: 80%;
+    
+    
+}
+
+.card2 header{
+  padding: 1px;
+  display: flex;
+  justify-content: center;
 }
 
 .card1 header {
-  padding: 10px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
 }
 
 .card1img{
-  width: 10%;
-  height: 10%;
+  width: 80%;
+    height: 80%;
+    margin: 5px auto;
 }
 
 .card2img{
-  width: 70%;
-  height: 60%;
-  margin: 5px auto;
+    width: 70%;
+    height: 70%;
+    margin: 5px auto;
 }
 
 
