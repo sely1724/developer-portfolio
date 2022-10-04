@@ -67,11 +67,11 @@ main {
   margin-top: .5rem;
 }
 
-.project-row{
+.flexbox-card{
   justify-content: center;
   margin: 0 auto;
   width: 100vw;
-  height: 70vh;
+  height: auto;
   flex-flow: row wrap;
   display: flex;
 }
@@ -83,159 +83,81 @@ main {
   border-width: 2px;
   box-shadow: 3px 3px 6px #aaaaaa;
   margin: 10px;
-  width: calc(50vw - 20px);
-  height: calc(40vh - 20px);
+  width: calc(90vw - 20px);
+  height: calc(50vh - 20px);
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
-  background-image: url("./horiseon.png");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 
-
-
-
 }
 
-
-
-.image-container{
- /* position: relative;
-  width: calc(50vw - 24px);
-  height: calc(66vh - 24px);
- object-fit: contain;
-  margin: 0;*/
-  
-  position: relative;
+#horiseon{
+  background-image: url("./horiseon.png");
 }
-
-
-
-.work-flexbox2{
-  justify-content: center;
-  margin: 0 auto;
-  width: 100vw;
-  flex-flow: row wrap;
+#portfolio{
+  background-image: url("./portfolio.png");
+}
+.project-card-small{
   display: flex;
-}
-
-.card2 {
-  display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   border-style: solid;
   border-width: 2px;
-  padding: 1px;
-  box-shadow: 3px 3px 6px  #aaaaaa;
+  box-shadow: 3px 3px 6px #aaaaaa;
   margin: 10px;
-  width: calc(25vw - 20px);
-  height: calc(33vh - 20px);
+  width: calc(45vw - 20px);
+  height: calc(25vh - 20px);
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 
 
-.card2 figure img{
-  position: absolute;
-  width: calc(25vw - 24px);
-    height: calc(33vh - 24px);
-    margin: 0;
-  
-}
-
-
-.card1 aside {
-  position: absolute;
-  width: 12vw;
-  height: 10vh;
-  bottom: 8px;
-  left: 0px;  
-}
-
-.card1 aside,
-          h3,
-    small{ 
+.project-card-big h3,
+.project-card-big small
+      
+    { 
   
   color: seagreen;
-  background-color: rgb(225, 233, 245);
   text-align: center;
-  padding: 0 8px 0 8px;
  }
 
 
- .card2 aside {
-  position: absolute;
-  width: 12vw;
-  height: 10vh;
-  bottom: 8px;
-  left: 0px;  
-}
-
-.card2 aside,
-          h3,
-    small{ 
-  
-  color: seagreen;
-  background-color: rgb(225, 233, 245);
-  text-align: center;
-  padding: 0 8px 0 8px;
- }
-        
-        
-
-
-/*.card2 .link{
-position: absolute;
-width: calc(25vw - 30px);
-bottom: 7px;
-right: 10px;
+h3,
+small{ 
 text-align: center;
 }
 
-.card2 header{
-  padding: 1px;
-  display: flex;
-  justify-content: center;
-}
 
+        
+        
 
-.card2img{
-    width: 70%;
-    height: 70%;
-    margin: 5px auto;
-}
-*/
-
-
-/*media screen and (max-width: 500px) {
-  .card1 {
-    width: calc(100vw - 20px);
-  }
-  .card2 {
-    width: calc(50vw - 20px);
-  }
-}*/
 
 @media screen and (min-width: 768px) {
   /* on tablets, set columns to only be 50% of the width and not grow */
   .project-card-big {
+    min-width: 50%;
+    min-height: 50%;
+    width: calc(50vw - 20px);
+    height:calc(50vh - 20px);
 
-   flex: 0 0 50%;
-    max-width: 50%;
-    max-height: 50%;
   }
 
 
   @media screen and (min-width: 992px) {
     header {
-      width: 75%;
+      width: 100%;
     }
   
     .project-card-big {
-      flex: 0 0 50%;
-      max-width: 50%;
-      max-height: 50%;
+      min-width: 30%;
+      min-height: 70%;
+    width: calc(50vw - 20px);
+    height: calc(60vh - 20px);
     }
   }
