@@ -115,6 +115,8 @@ main {
 
 
 .card1 figure img{
+  display: flex;
+  flex-grow: 1;
   position: absolute;
   width: calc(50vw - 24px);
     height: calc(66vh - 24px);
