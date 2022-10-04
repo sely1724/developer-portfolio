@@ -28,7 +28,6 @@ h1{  /*flex?*/
 
 }
 
-
 nav ul{
   display: flex;
   flex-direction: row;
@@ -68,10 +67,59 @@ main {
   margin-top: 1rem;
   }
 
-.about {
-  margin-top: .5rem;
+
+.flexbox-about{
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+  flex-flow: row wrap;
+  display: flex;
+}
+.flexbox-about-img{
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+  flex-flow: row wrap;
+  display: flex;
 }
 
+
+.about {
+  display: flex;
+  border-style: solid;
+  border-width: 2px;
+  border-color: seagreen;
+  box-shadow: 3px 3px 6px #aaaaaa;
+  margin: 10px;
+  width: 50vw;
+  height: 40vh;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  background-color: seagreen;
+  font-size: 12px;
+  text-align: center;
+  color:rgb(225, 233, 245);
+  justify-content: center;
+}
+
+.about-img {
+  display: flex;
+  justify-content: flex-end;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 3px 3px 6px #aaaaaa;
+  margin: 10px;
+  width: 40vw;
+  height: 40vh;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  object-fit: cover;
+
+}
 .flexbox-card{
   justify-content: center;
   margin: 0 auto;
