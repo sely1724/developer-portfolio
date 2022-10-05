@@ -69,15 +69,7 @@ main {
 
 
 .flexbox-about{
-  justify-content: flex-start;
-  margin: 0 auto;
-  width: 100vw;
-  height: auto;
-  flex-flow: row wrap;
-  display: flex;
-}
-.flexbox-about-img{
-  justify-content: flex-start;
+  justify-content: space-around;
   margin: 0 auto;
   width: 100vw;
   height: auto;
@@ -99,10 +91,11 @@ main {
   position: relative;
   flex-wrap: wrap;
   background-color: seagreen;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   color:rgb(225, 233, 245);
   justify-content: center;
+  padding: 40px;
 }
 
 .about-img {
@@ -137,7 +130,7 @@ main {
   box-shadow: 3px 3px 6px #aaaaaa;
   margin: 10px;
   width: calc(90vw - 20px);
-  height: calc(50vh - 20px);
+  height: calc(47vh - 20px);
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
@@ -194,12 +187,30 @@ text-align: center;
 @media screen and (min-width: 768px) {
   /* on tablets, set columns to only be 50% of the width and not grow */
   .project-card-big {
-    min-width: 50%;
+    width: calc(90vw - 20px);
+    height:calc(65vh - 20px);
+    min-width: 60%;
     min-height: 50%;
-    width: calc(50vw - 20px);
-    height:calc(50vh - 20px);
-
   }
+
+  .project-card-small {
+    width: calc(45vw - 20px);
+    height:calc(35vh - 20px);
+    min-width: 40%;
+    min-height: 40%;
+  }
+
+  .about{
+    min-width: 40%;
+    flex-grow: 0;
+    font-size: 16px;
+    padding: 50px;
+  }
+
+  .about-img{
+    min-width: 35%;
+  }
+
 
 
   @media screen and (min-width: 992px) {
@@ -208,9 +219,34 @@ text-align: center;
     }
   
     .project-card-big {
-      min-width: 30%;
+      min-width: 50%;
       min-height: 70%;
     width: calc(50vw - 20px);
     height: calc(60vh - 20px);
+    }
+
+    .project-card-small {
+      width: calc(25vw - 20px);
+      height:calc(42vh - 20px);
+      min-width: 31%;
+      min-height: 50%;
+    }
+
+    .about{
+      font-size: 16px;
+      padding: 50px;
+      width: calc(25vw - 20px);
+      height: calc(60vh - 20px);
+      min-width: 25%;
+      min-height: 50%;
+      margin-left: calc(23vw - 20px);
+    }
+
+    .about-img{
+    width: calc(25vw - 20px);
+    height: calc(60vh - 20px);
+    min-width: 25%;
+    min-height: 50%;
+    margin-right: calc(23vw - 20px);
     }
   }
