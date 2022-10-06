@@ -24,5 +24,5 @@ Please refer to the LICENSE in the repo.
 <img src= "./assets/media/screenshot3.png"/>
 
 ## Link to Deployed Website
-[Link](https://sely1724.github.io/semantic-structures/)
+[Link](https://sely1724.github.io/developer-portfolio/)
 
