@@ -20,6 +20,8 @@ Please refer to the LICENSE in the repo.
 
 ## Screenshots
 <img src= "./assets/media/screenshot1.png"/>
+<img src= "./assets/media/screenshot2.png"/>
+<img src= "./assets/media/screenshot3.png"/>
 
 ## Link to Deployed Website
 [Link](https://sely1724.github.io/semantic-structures/)
