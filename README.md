@@ -19,7 +19,7 @@ NA
 Please refer to the LICENSE in the repo.
 
 ## Screenshots
-<img src= "./assets/screenshot1.png"/>
+<img src= "./assets/media/screenshot1.png"/>
 
 ## Link to Deployed Website
 [Link](https://sely1724.github.io/semantic-structures/)
