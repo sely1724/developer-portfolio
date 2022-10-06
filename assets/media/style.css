@@ -1,9 +1,13 @@
+/* root element to set variables */
 :root {
   --accent-color: seagreen;
   --main-color: rgb(225, 233, 245);
   --font: 'Gill Sans', 'Gill Sans MT', calibri , 'Trebuchet MS', sans-serif;
+  --border-width: 2px;
+  --shadow: 3px 3px 6px #aaaaaa;
 }
 
+/* universal selector */
 * {
   box-sizing: border-box;
   margin:0;
@@ -11,241 +15,213 @@
   font-family: var(--font);
   color: var(--accent-color);
   background-color: var(--main-color);
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-html {
-  scroll-behavior: smooth;
+/*start header - includes h1 and nav information*/
+header {
+  padding: 8px;
 }
 
-header{
-  background-color: var(--main-color);
-  padding: .5rem;
-}
-
-
-h1{  /*flex?*/
+h1,
+nav ul { 
   display: flex;
   flex-direction: row;
-  font-size: 24px;
+}
+
+h1 {
   justify-content: flex-start;
-  padding:0 8px 8px 8px;
-
+  padding: 0 8px 8px 8px;
+  font-size: 24px;
 }
 
-nav ul{
-  display: flex;
-  flex-direction: row;
+nav ul {
   padding: 8px 8px 0 8px;
-}
-
-.header-nav{
   justify-content: flex-end;
 }
-.contact-me-nav {
-  justify-content: center;
-}
+
 nav a {
-  font-size: 16px;
   padding: 8px;
   text-decoration: none;
 }
 
-
-
-main {
-  display: flex;
+/*start main & set margin*/
+main,
+.about,
+.about-img,
+.project-card-big,
+.project-card-small
+ {
   flex-wrap: wrap;
-  flex-grow: 1; /*when to put flex grow in*/
+  margin: 10px;
 }
 
-.ptarmigan{
+/* adding flex to sections*/
+main,
+.ptarmigan,
+.flexbox-about,
+.center,
+.about,
+.about-img,
+.projects-card,
+.project-card-big,
+.project-card-small {
   display: flex;
-  width:100vw;
+}
+
+/*positioning ptarmiagan ridge image and parent sections including about*/
+.ptarmigan,
+.flexbox-about{
+  width: 100vw;
   height: auto;
 }
 
+/*class to center box*/
 .center {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
   margin-top: 16px;
   }
 
-
-.flexbox-about{
+/*parent element for about section*/
+.flexbox-about {
   justify-content: space-around;
   margin: 0 auto;
-  width: 100vw;
-  height: auto;
   flex-flow: row wrap;
-  display: flex;
 }
 
-
+/*children in about section*/
 .about {
-  display: flex;
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--accent-color);
-  box-shadow: 3px 3px 6px #aaaaaa;
-  margin: 10px;
   width: 50vw;
   height: 40vh;
-  flex-direction: column;
   position: relative;
-  flex-wrap: wrap;
   background-color: var(--accent-color);
-  font-size: 14px;
-  text-align: center;
   color: var(--main-color);
-  justify-content: center;
   padding: 40px;
 }
 
 .about-img {
-  display: flex;
   justify-content: flex-end;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: 3px 3px 6px #aaaaaa;
-  margin: 10px;
   width: 40vw;
   height: 40vh;
-  flex-direction: column;
   position: relative;
-  flex-wrap: wrap;
   object-fit: cover;
-
 }
-.flexbox-card{
-  justify-content: center;
+
+/*parent work section*/
+.projects-card {
   margin: 0 auto;
   width: 100vw;
   height: auto;
   flex-flow: row wrap;
-  display: flex;
+  
 }
-
-.project-card-big{
-  display: flex;
+/*child larger card*/
+.project-card-big {
   justify-content: flex-end;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: 3px 3px 6px #aaaaaa;
-  margin: 10px;
   width: calc(90vw - 20px);
   height: calc(47vh - 20px);
-  flex-direction: column;
   position: relative;
-  flex-wrap: wrap;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
+/*children small cards*/
+.project-card-small {
+  justify-content: flex-end;
+  width: calc(45vw - 20px);
+  height: calc(25vh - 20px);
+  position: relative;
+  background-size: cover;
+}
+
+/*backgroun images for cards*/
 #horiseon{
   background-image: url("./horiseon.png");
 }
 #portfolio{
   background-image: url("./portfolio.png");
 }
-.project-card-small{
-  display: flex;
-  justify-content: flex-end;
+
+
+/*borders & shadow*/
+.about,
+.about-img,
+.project-card-big,
+.project-card-small {
+  border-width: var(--border-width);
   border-style: solid;
-  border-width: 2px;
-  box-shadow: 3px 3px 6px #aaaaaa;
-  margin: 10px;
-  width: calc(45vw - 20px);
-  height: calc(25vh - 20px);
-  flex-direction: column;
-  position: relative;
-  flex-wrap: wrap;
-  background-size: cover;
-  background-repeat: no-repeat;
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow);
+
 }
 
-
-
-
-.project-card-big h3,
-.project-card-big small
- { 
-  
-  color: var(--accent-color);
-  text-align: center;
- }
-
-
-h3,
-small{ 
-text-align: center;
+/*contact me section*/
+.contact-me-nav {
+  justify-content: center;
 }
 
-
-        
-        
-
+/*start media section*/
 
 @media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
   .project-card-big {
     width: calc(90vw - 20px);
     height:calc(65vh - 20px);
     min-width: 60%;
     min-height: 50%;
-  }
+    }
 
   .project-card-small {
     width: calc(45vw - 20px);
     height:calc(35vh - 20px);
     min-width: 40%;
     min-height: 40%;
-  }
+    }
 
-  .about{
+  .about {
     min-width: 40%;
     flex-grow: 0;
     font-size: 16px;
     padding: 50px;
-  }
+    }
 
   .about-img{
     min-width: 35%;
   }
+}
 
-
-
-  @media screen and (min-width: 992px) {
-    header {
-      width: 100%;
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
     }
-  
-    .project-card-big {
-      min-width: 50%;
-      min-height: 70%;
+
+  .project-card-big {
+    min-width: 50%;
+    min-height: 70%;
     width: calc(50vw - 20px);
     height: calc(62vh - 20px);
     }
 
-    .project-card-small {
-      width: calc(25vw - 20px);
-      height:calc(42vh - 20px);
-      min-width: 31%;
-      min-height: 50%;
+  .project-card-small {
+    width: calc(25vw - 20px);
+    height:calc(42vh - 20px);
+    min-width: 31%;
+    min-height: 50%;
     }
 
-    .about{
-      font-size: 16px;
-      padding: 50px;
-      width: calc(25vw - 20px);
-      height: calc(60vh - 20px);
-      min-width: 25%;
-      min-height: 50%;
-      margin-left: calc(23vw - 20px);
+  .about{
+    font-size: 16px;
+    padding: 50px;
+    width: calc(25vw - 20px);
+    height: calc(60vh - 20px);
+    min-width: 25%;
+    min-height: 50%;
+    margin-left: calc(23vw - 20px);
     }
 
-    .about-img{
+  .about-img{
     width: calc(25vw - 20px);
     height: calc(60vh - 20px);
     min-width: 25%;
