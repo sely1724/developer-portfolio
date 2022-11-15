@@ -143,6 +143,9 @@ main,
 #portfolio{
   background-image: url("./portfolio.png");
 }
+#dinner-drinks{
+  background-image: url("./dinnerdrinks.png");
+}
 
 
 /*borders & shadow*/
